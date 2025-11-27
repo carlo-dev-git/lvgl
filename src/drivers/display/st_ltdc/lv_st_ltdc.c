@@ -247,6 +247,7 @@ static lv_color_format_t get_lv_cf_from_layer_cf(uint32_t cf)
 
 static void reload_event_callback(LTDC_HandleTypeDef * hltdc)
 {
+    LV_UNUSED(hltdc);
     uint32_t i;
     for(i = 0; i < MAX_LAYER; i++) {
         if(g_data.layer_interrupt_is_owned[i]) {
@@ -268,6 +269,7 @@ static void clean_dcache(void)
 #if LV_ST_LTDC_USE_DMA2D_FLUSH
 static void transfer_complete_callback(DMA2D_HandleTypeDef * hdma2d)
 {
+    LV_UNUSED(hdma2d);
     DMA2D->IFCR = 0x3FU;
     uint32_t owner = g_data.dma2d_interrupt_owner;
     if(owner) {
