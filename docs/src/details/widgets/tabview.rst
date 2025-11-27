@@ -56,7 +56,7 @@ Renaming tabs
 -------------
 
 A tab can be renamed with
-:cpp:expr:`lv_tabview_rename_tab(tabview, tab_id, "New Name")`.
+:cpp:expr:`lv_tabview_set_tab_text(tabview, tab_id, "New Name")`.
 
 Navigating to a new tab
 -----------------------
@@ -127,7 +127,7 @@ Programmatically add these buttons to a group if required.
 Example
 *******
 
-.. include:: ../../examples/widgets/tabview/index.rst
+.. include:: /examples/widgets/tabview/index.rst
 
 
 

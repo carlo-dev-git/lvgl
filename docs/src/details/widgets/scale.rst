@@ -1,10 +1,9 @@
+.. include:: /include/substitutions.txt
 .. _lv_scale:
 
 ================
 Scale (lv_scale)
 ================
-
-.. |deg|    unicode:: U+000B0 .. DEGREE SIGN
 
 Overview
 ********
@@ -324,7 +323,7 @@ No *Keys* are processed by Scale Widgets.
 Example
 *******
 
-.. include:: ../../examples/widgets/scale/index.rst
+.. include:: /examples/widgets/scale/index.rst
 
 
 
